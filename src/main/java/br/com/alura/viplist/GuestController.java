@@ -28,7 +28,7 @@ public class GuestController {
 	@RequestMapping("guestlist")
 	public String guestList(Model model) {
 
-		Iterable<Guest> guests = guestService.getAllGuests();
+		Iterable<Guest> guests = guestService.getGuestList();
 
 		model.addAttribute("guests", guests);
 
@@ -45,7 +45,7 @@ public class GuestController {
 
 		emailSender.send(email, "VIP List", "You are invited to VIP List.");
 
-		Iterable<Guest> guests = guestService.getAllGuests();
+		Iterable<Guest> guests = guestService.getGuestList();
 
 		model.addAttribute("guests", guests);
 

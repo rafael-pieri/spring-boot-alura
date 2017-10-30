@@ -12,7 +12,7 @@ public class GuestService {
 	@Autowired
 	private GuestRepository guestRepository;
 
-	public Iterable<Guest> getAllGuests() {
+	public Iterable<Guest> getGuestList() {
 
 		return guestRepository.findAll();
 	}

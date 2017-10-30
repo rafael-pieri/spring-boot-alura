@@ -2,26 +2,26 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ListaVIP</title>
+<title>VIP List</title>
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
 
 	<div class="container">
 
-		<div id="listaDeConvidados">
+		<div id="GuestList">
 			<table class="table table-hover">
 				<thead>
 					<tr>
-						<th>Nome</th>
+						<th>Name</th>
 						<th>Email</th>
-						<th>Nome</th>
+						<th>Phone</th>
 					</tr>
 				</thead>
-				<tr th:each="convidado : ${convidados}">
-					<td><span th:text="${convidado.nome}"></span></td>
-					<td><span th:text="${convidado.email}"></span></td>
-					<td><span th:text="${convidado.telefone}"></span></td>
+				<tr th:each="guest : ${guests}">
+					<td><span th:text="${guest.name}"></span></td>
+					<td><span th:text="${guest.email}"></span></td>
+					<td><span th:text="${guest.phone}"></span></td>
 				</tr>
 
 			</table>
@@ -29,20 +29,20 @@
 		
 		<hr/>
 
-		<form action="salvar" method="post">
+		<form action="save" method="post">
 			<div class="form-group">
-				<label for="nome">Nome completo</label> <input type="text"
-					class="form-control" id="nome" name="nome" placeholder="Nome" />
+				<label for="name">Name</label> <input type="text"
+					class="form-control" id="name" name="name" placeholder="Name" />
 			</div>
 			<div class="form-group">
 				<label for="email">E-mail</label> <input type="email"
 					class="form-control" id="email" name="email" placeholder="Email" />
 			</div>
 			<div class="form-group">
-				<label for="telefone">Telefone</label> <input
-					type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone" />
+				<label for="phone">Phone</label> <input
+					type="text" class="form-control" id="phone" name="phone" placeholder="Phone" />
 			</div>
-			<button type="submit" class="btn btn-success">Convidar</button>
+			<button type="submit" class="btn btn-success">Invite</button>
 		</form>
 
 	</div>
