@@ -3,8 +3,10 @@ package br.com.alura.viplist.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
-@Entity(name = "guest")
+@Entity
+@Table(name = "guest")
 public class Guest {
 
 	@Id
@@ -17,9 +19,7 @@ public class Guest {
 
 	private String phone;
 
-	public Guest() {
-
-	}
+	public Guest() {}
 
 	public Guest(String name, String email, String phone) {
 		this.name = name;
@@ -58,5 +58,4 @@ public class Guest {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-
 }
