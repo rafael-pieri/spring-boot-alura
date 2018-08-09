@@ -1,4 +1,4 @@
-## Alura Online Courses - Spring Boot: Agility in java development with Spring
+## Spring Boot: Agility in java development with Spring
 
 ### Overview
 Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
