@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/rafael-pieri/spring-boot-alura.svg?branch=master)](https://travis-ci.com/rafael-pieri/spring-boot-alura)
+
 ## Spring Boot: Agility in java development with Spring
 
 ### Overview
